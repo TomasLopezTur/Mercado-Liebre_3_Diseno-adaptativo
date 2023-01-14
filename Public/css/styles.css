@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+:root {
+    /*variables de colores*/
+    --amarillo:#EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris_oscuro: #666;
+    --Gris_claro: #ebebeb;
+    --Verde: #39b54a;
+    /*variables fuentes*/
+    --fuente: 'Roboto', sans-serif;
+    /*tamaños tipograficos*/
+    --parrafo: 12px;
+    --titulo: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 16px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0;
+}
+
+header div.logo  {
+    width: 125px;
+    padding: 0px 30px 15px;
+}
+
+header div.busqueda {
+    padding-left: 22px;
+    padding-bottom: 18px;
+    /*margin-left:15px;*/
+}
+header div input {
+    width: 190px;
+    height: 25px;
+}
+header div button {
+    width: 25px;
+    height: 25px;
+}
+
+header p {
+    font-size: var(--parrafo);
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    font-size: var(--parrafo);
+    
+}
+header nav ul.bottom-list {
+    padding-top: 15px;
+}
+header nav ul.bottom-list i {
+    padding-left: 5px;
+}
+
+header div.burger-menu {
+    
+    background-color: var(--Celeste);
+    border-radius: 5px;
+    color: white;
+    width: 15px;
+    padding: 8px;
+    padding-left: 10px;
+    margin: 25px auto 0;
+    
+}
+
+/*MAIN*/
+main{
+    background-color: var(--Gris_claro);
+}
+main section {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    
+}
+
+main section h4 {
+    font-size: var(--titulo);
+}
+
+main section article {
+    margin:10px 0 10px 0;
+    border: 1px solid #ebebeb ;
+    padding: 15px;
+    background-color: white;
+}
+/* main section article a img {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--Gris_claro);
+} */
+main section article div.infoContainer {
+    padding-top: 20px;
+    border-top: 1px solid var(--Gris_claro);
+}
+main section article div.shipping {
+    display: flex;
+    border: 1px solid var(--Verde);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: var(--Verde);
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+main section article p.price {
+    font-size: var(--precio);
+}
+main section article p.discount {
+    font-size: var(--descuento);
+    color: var(--Verde);
+}
+main section article h5 {
+    font-size: var(--descripcion);
+    font-weight: 500;
+    padding-top: 20px ;
+    display: none;
+}
+
+
+/*FOOTER*/
+
+footer {
+    padding: 50px 25px 25px;
+    background-color: white;
+}
+footer p {
+    font-size: var(--parrafo);
+}
+footer article {
+    text-align: center;
+    margin-bottom:  50px;
+}
+footer article i {
+    font-size: 2em;
+    color: var(--Celeste);
+    margin-bottom: 10px;
+}
+
+footer span {
+    font-size: var(--parrafo);
+    
+}
+
+/*media query*/
+/*tablets*/
+@media (min-width: 361px){
+    header nav {
+        display: block;
+    }
+    header div.burger-menu{
+        display: none;
+    }
+    main section article{
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article h5 {
+        display: block;
+    }
+}
+/* desktop */
+@media (min-width: 769px){
+
+}
